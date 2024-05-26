@@ -1,16 +1,16 @@
-const { placeholderJobs } = require("./placeholder-data");
+const { placeholderNotes } = require("./placeholder-data");
 const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 
 async function main() {
   await Promise.all(
-    placeholderJobs.map(async (job) => {
-      await prisma.job.upsert({
+    placeholderNotes.map(async (note) => {
+      await prisma.note.upsert({
         where: {
-          slug: job.slug,
+          slug: note.slug,
         },
-        update: job,
-        create: job,
+        update: note,
+        create: note,
       });
     }),
   );

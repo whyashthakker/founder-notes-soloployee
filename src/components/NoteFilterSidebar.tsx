@@ -1,18 +1,18 @@
-import { jobTypes } from "@/lib/job-types";
+import { noteTypes } from "@/lib/note-types";
 import prisma from "@/lib/prisma";
-import { JobFilterValues, jobFilterSchema } from "@/lib/validation";
+import { NoteFilterValues, noteFilterSchema } from "@/lib/validation";
 import { redirect } from "next/navigation";
 import FormSubmitButton from "./FormSubmitButton";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import Select from "./ui/select";
 
-async function filterJobs(formData: FormData) {
+async function filterNotes(formData: FormData) {
   "use server";
 
   const values = Object.fromEntries(formData.entries());
 
-  const { q, type, location, remote } = jobFilterSchema.parse(values);
+  const { q, type, location, remote } = noteFilterSchema.parse(values);
 
   const searchParams = new URLSearchParams({
     ...(q && { q: q.trim() }),
@@ -24,14 +24,14 @@ async function filterJobs(formData: FormData) {
   redirect(`/?${searchParams.toString()}`);
 }
 
-interface JobFilterSidebarProps {
-  defaultValues: JobFilterValues;
+interface NoteFilterSidebarProps {
+  defaultValues: NoteFilterValues;
 }
 
-export default async function JobFilterSidebar({
+export default async function NoteFilterSidebar({
   defaultValues,
-}: JobFilterSidebarProps) {
-  const distinctLocations = (await prisma.job
+}: NoteFilterSidebarProps) {
+  const distinctLocations = (await prisma.notes
     .findMany({
       where: { approved: true },
       select: { location: true },
@@ -43,7 +43,7 @@ export default async function JobFilterSidebar({
 
   return (
     <aside className="sticky top-0 h-fit rounded-lg border bg-background p-4 md:w-[260px]">
-      <form action={filterJobs} key={JSON.stringify(defaultValues)}>
+      <form action={filterNotes} key={JSON.stringify(defaultValues)}>
         <div className="space-y-4">
           <div className="flex flex-col gap-2">
             <Label htmlFor="q">Search</Label>
@@ -62,7 +62,7 @@ export default async function JobFilterSidebar({
               defaultValue={defaultValues.type || ""}
             >
               <option value="">All types</option>
-              {jobTypes.map((type) => (
+              {noteTypes.map((type) => (
                 <option key={type} value={type}>
                   {type}
                 </option>
@@ -92,9 +92,9 @@ export default async function JobFilterSidebar({
               className="scale-125 accent-black"
               defaultChecked={defaultValues.remote}
             />
-            <Label htmlFor="remote">Remote jobs</Label>
+            <Label htmlFor="remote">Remote notes</Label>
           </div>
-          <FormSubmitButton className="w-full">Filter jobs</FormSubmitButton>
+          <FormSubmitButton className="w-full">Filter notes</FormSubmitButton>
         </div>
       </form>
     </aside>

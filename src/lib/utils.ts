@@ -8,7 +8,10 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function formatMoney(amount: number) {
+export function formatMoney(amount: number | null) {
+  if (amount === null) {
+    return "N/A"; // or any other appropriate value for null salary
+  }
   return new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "USD",

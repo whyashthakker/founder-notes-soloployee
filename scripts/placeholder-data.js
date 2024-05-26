@@ -1,8 +1,8 @@
-const placeholderJobs = [
+const placeholderNotes = [
   {
     title: "Full-Stack Developer at Stripe",
     type: "Full-time",
-    companyName: "Stripe",
+    writerName: "Stripe",
     locationType: "Remote",
     location: "San Francisco, California, United States",
     applicationEmail: "apply@stripe.com",
@@ -15,7 +15,7 @@ const placeholderJobs = [
 
 Stripe is a global technology company that builds economic infrastructure for the internet. Our suite of products and services are designed to power commerce for online businesses of all sizes. At Stripe, we're looking for passionate, creative, and innovative developers to help build the next generation of payment platforms.
 
-**Job Description**
+**Note Description**
 
 As a Full-Stack Developer at Stripe, you will be working on cutting-edge technology to build and maintain scalable, efficient, and reliable software solutions. You'll collaborate with a team of talented engineers, designers, and product managers to deliver exceptional user experiences.
 
@@ -53,7 +53,7 @@ Stripe is an equal opportunity employer. We value diversity and are committed to
   {
     title: "Full-Stack Developer at Vercel",
     type: "Full-time",
-    companyName: "Vercel",
+    writerName: "Vercel",
     locationType: "Hybrid",
     location: "San Francisco, California, United States",
     applicationEmail: "apply@vercel.com",
@@ -66,7 +66,7 @@ Stripe is an equal opportunity employer. We value diversity and are committed to
 
 Vercel is a cloud platform for static sites and Serverless Functions that fits perfectly with your workflow. It enables developers to host Jamstack websites with ease.
 
-Job Description: We're looking for a talented Full-Stack Developer to join our dynamic team. As a Full-Stack Developer at Vercel, you'll work on a variety of projects, building high-quality, scalable web applications. You'll collaborate with a team of designers, developers, and product managers to push the boundaries of what's possible on the web.
+Note Description: We're looking for a talented Full-Stack Developer to join our dynamic team. As a Full-Stack Developer at Vercel, you'll work on a variety of projects, building high-quality, scalable web applications. You'll collaborate with a team of designers, developers, and product managers to push the boundaries of what's possible on the web.
 
 **Key Responsibilities:**
 
@@ -108,7 +108,7 @@ Join us at Vercel and be a part of shaping the future of web development!
   {
     title: "ChatGPT Backend Developer at OpenAI",
     type: "Part-time",
-    companyName: "OpenAI",
+    writerName: "OpenAI",
     locationType: "On-site",
     location: "San Francisco, California, United States",
     applicationUrl: "https://openai.com/apply",
@@ -120,7 +120,7 @@ Join us at Vercel and be a part of shaping the future of web development!
 
 OpenAI is an AI research and deployment company dedicated to ensuring that artificial general intelligence (AGI) benefits all of humanity. We're leading the field in developing advanced AI models, like ChatGPT.
 
-**Job Description:**
+**Note Description:**
 
 We are seeking a skilled ChatGPT Backend Developer to join our innovative team. In this role, you'll contribute to the development and optimization of the ChatGPT platform, focusing on backend systems that power conversational AI. You'll collaborate with a talented team of researchers, engineers, and product managers to enhance ChatGPT's capabilities and scalability.
 
@@ -160,7 +160,7 @@ If you're passionate about AI and want to contribute to cutting-edge technology 
   {
     title: "Intern at Coding in Flow",
     type: "Internship",
-    companyName: "Coding in Flow",
+    writerName: "Coding in Flow",
     locationType: "Remote",
     applicationUrl: "https://codinginflow.com",
     slug: "intern-at-coding-in-flow-4",
@@ -175,7 +175,7 @@ I might not be able to pay you a lot, but I can offer you a lot of experience an
   {
     title: "Contractor at SmartDiary.co",
     type: "Contract",
-    companyName: "SmartDiary.co",
+    writerName: "SmartDiary.co",
     locationType: "Remote",
     applicationUrl: "https://smartdiary.co",
     slug: "contractor-at-smartdiary-co-5",
@@ -192,7 +192,7 @@ Try it out for free at [https://smartdiary.co](https://smartdiary.co).
   {
     title: "Software Engineer at Microsoft",
     type: "Temporary",
-    companyName: "Microsoft",
+    writerName: "Microsoft",
     locationType: "On-site",
     location: "Redmond, Washington, United States",
     applicationEmail: "applications@microsoft.com",
@@ -204,7 +204,7 @@ Try it out for free at [https://smartdiary.co](https://smartdiary.co).
 **About Microsoft:**
 
 Microsoft is a global leader in software, services, devices, and solutions that help people and businesses realize their full potential. Renowned for products like Windows, Office, and Azure, Microsoft is continually innovating in the field of technology.
-Job Description: We are looking for a talented and dedicated Software Engineer Contractor to contribute to Microsoft's dynamic and diverse projects. In this role, you will be responsible for developing and maintaining software applications, collaborating with various teams to bring innovative solutions to life. This is a contract position with the potential for future long-term opportunities.
+Note Description: We are looking for a talented and dedicated Software Engineer Contractor to contribute to Microsoft's dynamic and diverse projects. In this role, you will be responsible for developing and maintaining software applications, collaborating with various teams to bring innovative solutions to life. This is a contract position with the potential for future long-term opportunities.
 
 **Key Responsibilities:**
 
@@ -243,7 +243,7 @@ As a Microsoft contractor, you'll have the opportunity to work on exciting proje
   {
     title: "Full-Stack Developer at Apple",
     type: "Full-time",
-    companyName: "Apple Inc.",
+    writerName: "Apple Inc.",
     locationType: "Hybrid",
     location: "Cupertino, California, United States",
     applicationUrl: "https://apple.com/apply",
@@ -255,7 +255,7 @@ As a Microsoft contractor, you'll have the opportunity to work on exciting proje
 
 Apple is a pioneer in personal technology and a global leader in innovation, known for its iconic products like the iPhone, iPad, and Mac. Our mission is to create products that enrich people's lives and help them achieve their dreams.
 
-**Job Description:**
+**Note Description:**
 
 We are seeking a Full-Stack Developer to join our forward-thinking development team at Apple. In this role, you'll be responsible for building and maintaining software that upholds the quality and innovation Apple is known for. You will play a key role in developing both front-end and back-end components of our applications, working closely with a team of world-class engineers and designers.
 
@@ -296,7 +296,7 @@ Join Apple and be a part of a team that's dedicated to making a difference in th
   {
     title: "Junior Web Developer at Shopify",
     type: "Part-time",
-    companyName: "Shopify",
+    writerName: "Shopify",
     locationType: "Hybrid",
     location: "Ottawa, Ontario, Canada",
     applicationEmail: "career@shopify.com",
@@ -309,7 +309,7 @@ Join Apple and be a part of a team that's dedicated to making a difference in th
 
 Shopify is a leading global commerce company, providing trusted tools to start, grow, market, and manage a retail business of any size. Shopify makes commerce better for everyone with a platform and services that are engineered for reliability while delivering a better shopping experience for consumers everywhere.
 
-**Job Description:**
+**Note Description:**
 
 We are looking for a part-time Junior Web Developer to join our development team. This role is ideal for someone who is passionate about web development, eager to learn, and looking to gain extensive experience in a dynamic e-commerce environment. You will be assisting in the development and maintenance of Shopify's web-based projects and collaborating with experienced developers.
 
@@ -347,5 +347,5 @@ This is a fantastic opportunity for those looking to kickstart their career in w
 ];
 
 module.exports = {
-  placeholderJobs,
+  placeholderNotes,
 };

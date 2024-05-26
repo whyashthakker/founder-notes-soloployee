@@ -14,7 +14,7 @@ export async function approveSubmission(
   formData: FormData,
 ): Promise<FormState> {
   try {
-    const jobId = parseInt(formData.get("jobId") as string);
+    const noteId = parseInt(formData.get("noteId") as string);
 
     const user = await currentUser();
 
@@ -22,8 +22,8 @@ export async function approveSubmission(
       throw new Error("Not authorized");
     }
 
-    await prisma.job.update({
-      where: { id: jobId },
+    await prisma.notes.update({
+      where: { id: noteId },
       data: { approved: true },
     });
 
@@ -37,12 +37,12 @@ export async function approveSubmission(
   }
 }
 
-export async function deleteJob(
+export async function deleteNote(
   prevState: FormState,
   formData: FormData,
 ): Promise<FormState> {
   try {
-    const jobId = parseInt(formData.get("jobId") as string);
+    const noteId = parseInt(formData.get("noteId") as string);
 
     const user = await currentUser();
 
@@ -50,16 +50,16 @@ export async function deleteJob(
       throw new Error("Not authorized");
     }
 
-    const job = await prisma.job.findUnique({
-      where: { id: jobId },
+    const note = await prisma.notes.findUnique({
+      where: { id: noteId },
     });
 
-    if (job?.companyLogoUrl) {
-      await del(job.companyLogoUrl);
+    if (note?.companyLogoUrl) {
+      await del(note.companyLogoUrl);
     }
 
-    await prisma.job.delete({
-      where: { id: jobId },
+    await prisma.notes.delete({
+      where: { id: noteId },
     });
 
     revalidatePath("/");

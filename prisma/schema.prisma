@@ -1,6 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider        = "prisma-client-js"
   previewFeatures = ["fullTextSearch"]
@@ -12,16 +9,18 @@ datasource db {
   directUrl = env("POSTGRES_URL_NON_POOLING")
 }
 
-model Job {
+model Notes {
   id               Int      @id @default(autoincrement())
   slug             String   @unique
-  title            String
-  type             String
-  locationType     String
+  title            String?
+  socialMediaUrl   String?
+  category         String?
+  type             String?
+  locationType     String?
   location         String?
   description      String?
-  salary           Int
-  companyName      String
+  salary           Int?
+  writerName       String
   applicationEmail String?
   applicationUrl   String?
   companyLogoUrl   String?
@@ -29,5 +28,5 @@ model Job {
   createdAt        DateTime @default(now())
   updatedAt        DateTime @updatedAt
 
-  @@map("jobs")
+  @@map("notes")
 }

@@ -1,10 +1,10 @@
 import { Metadata } from "next";
-import NewJobForm from "./NewJobForm";
+import NewNoteForm from "./NewNoteForm";
 
 export const metadata: Metadata = {
-  title: "Post a new job",
+  title: "Post a new note",
 };
 
 export default function Page() {
-  return <NewJobForm />;
+  return <NewNoteForm />;
 }

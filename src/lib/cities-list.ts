@@ -24371,13 +24371,13 @@ const cities = [
   {
     country: "Cuba",
     geonameid: 3556077,
-    name: "Jobabo",
+    name: "Noteabo",
     subcountry: "Holgu\u00edn",
   },
   {
     country: "Cuba",
     geonameid: 3556078,
-    name: "Jobabo",
+    name: "Noteabo",
     subcountry: "Las Tunas",
   },
   {
