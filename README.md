@@ -1,5 +1,7 @@
 # Founder Notes Soloployee
 
+<img src="public/1.png" alt="Founder Notes Soloployee" width="600">
+
 Founder Notes Soloployee is a powerful web application built with Next.js 14 and the App Router, designed to help founders and solopreneurs efficiently document and learn from their failures. The application sources notes from founders all around the world, creating a global knowledge base of valuable insights and lessons learned.
 
 ## Features
@@ -10,6 +12,8 @@ Founder Notes Soloployee is a powerful web application built with Next.js 14 and
 - Seamless integration with PostgreSQL for data persistence
 - Optimized for performance using Next.js 14 and the App Router
 - Easy setup and deployment with Bun
+
+<img src="public/2.png" alt="Founder Notes Soloployee" width="600">
 
 ## Prerequisites
 
